@@ -3,18 +3,149 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Name</title>
+    <title>Ian Raymond Domingo</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="container">
-      <h1 class="name">Your Name</h1>
-      <p class="subtitle">Computer Science • Machine Learning • Research</p>
-      <nav class="links">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:you@example.com">Email</a>
-      </nav>
+    <main class="page" aria-label="Personal homepage">
+      <section class="device" aria-label="MacBook display">
+        <div class="screen">
+          <header class="menu-bar" aria-label="Top menu bar">
+            <div class="menu-left">
+              <span class="apple" aria-hidden="true"></span>
+              <span class="menu-title">Ian Domingo</span>
+            </div>
+            <div class="menu-right" aria-live="polite">
+              <span>Wi-Fi</span>
+              <span class="battery">100%</span>
+              <span class="time" id="menu-time">--:--</span>
+            </div>
+          </header>
+
+          <section class="desktop" aria-label="Desktop windows">
+            <div class="windows">
+              <section class="window" id="about" aria-labelledby="about-title">
+                <div class="window-bar">
+                  <div class="window-controls" aria-label="Window controls">
+                    <button class="control red" data-action="close" aria-label="Close About"></button>
+                    <button class="control yellow" data-action="collapse" aria-label="Collapse About"></button>
+                    <button class="control green" data-action="minimize" aria-label="Minimize About"></button>
+                  </div>
+                  <h2 class="window-title" id="about-title">About</h2>
+                </div>
+                <div class="window-content">
+                  <p class="name">Ian Raymond Domingo</p>
+                  <p class="summary">
+                    Biologically inspired ML: neural balancing across CNNs/Transformers, optimization and model
+                    behavior, with growing interest in LLM safety and memorization.
+                  </p>
+                </div>
+              </section>
+
+              <section class="window" id="research" aria-labelledby="research-title">
+                <div class="window-bar">
+                  <div class="window-controls" aria-label="Window controls">
+                    <button class="control red" data-action="close" aria-label="Close Research"></button>
+                    <button class="control yellow" data-action="collapse" aria-label="Collapse Research"></button>
+                    <button class="control green" data-action="minimize" aria-label="Minimize Research"></button>
+                  </div>
+                  <h2 class="window-title" id="research-title">Research</h2>
+                </div>
+                <div class="window-content">
+                  <ul>
+                    <li>Neural Balancing (core project).</li>
+                    <li>PushApart + LWTA for attention heads (brief).</li>
+                    <li>LLM memorization / rote memorization analysis (brief).</li>
+                    <li>Multimodal model behavior and safety (brief).</li>
+                    <li>MRI generative modeling (VAE/DDPM, T1→T2 translation) (brief).</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="window" id="industry" aria-labelledby="industry-title">
+                <div class="window-bar">
+                  <div class="window-controls" aria-label="Window controls">
+                    <button class="control red" data-action="close" aria-label="Close Industry"></button>
+                    <button class="control yellow" data-action="collapse" aria-label="Collapse Industry"></button>
+                    <button class="control green" data-action="minimize" aria-label="Minimize Industry"></button>
+                  </div>
+                  <h2 class="window-title" id="industry-title">Industry</h2>
+                </div>
+                <div class="window-content">
+                  <ul>
+                    <li>Amazon: Next-Gen Security Automation / Applied Scientist internship; security data classification + DB improvements with GenAI.</li>
+                    <li>Lawrence Livermore: external sensors for anomaly detection on heavy machinery.</li>
+                    <li>iMetalX: applied ML for industrial workflows (high level).</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="window" id="projects" aria-labelledby="projects-title">
+                <div class="window-bar">
+                  <div class="window-controls" aria-label="Window controls">
+                    <button class="control red" data-action="close" aria-label="Close Projects"></button>
+                    <button class="control yellow" data-action="collapse" aria-label="Collapse Projects"></button>
+                    <button class="control green" data-action="minimize" aria-label="Minimize Projects"></button>
+                  </div>
+                  <h2 class="window-title" id="projects-title">Projects</h2>
+                </div>
+                <div class="window-content">
+                  <ul>
+                    <li>Checkless: restaurant inventory/analytics; Supabase + Vercel.</li>
+                    <li>Adaptive Optimizer Sandbox (placeholder).</li>
+                    <li>Model Drift Monitor (placeholder).</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="window" id="teaching" aria-labelledby="teaching-title">
+                <div class="window-bar">
+                  <div class="window-controls" aria-label="Window controls">
+                    <button class="control red" data-action="close" aria-label="Close Teaching"></button>
+                    <button class="control yellow" data-action="collapse" aria-label="Collapse Teaching"></button>
+                    <button class="control green" data-action="minimize" aria-label="Minimize Teaching"></button>
+                  </div>
+                  <h2 class="window-title" id="teaching-title">Teaching</h2>
+                </div>
+                <div class="window-content">
+                  <ul>
+                    <li>TA roles: CS178, CS273A, CS143, and related courses.</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="window" id="links" aria-labelledby="links-title">
+                <div class="window-bar">
+                  <div class="window-controls" aria-label="Window controls">
+                    <button class="control red" data-action="close" aria-label="Close Links"></button>
+                    <button class="control yellow" data-action="collapse" aria-label="Collapse Links"></button>
+                    <button class="control green" data-action="minimize" aria-label="Minimize Links"></button>
+                  </div>
+                  <h2 class="window-title" id="links-title">Links</h2>
+                </div>
+                <div class="window-content">
+                  <ul class="link-list">
+                    <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a></li>
+                    <li><a href="mailto:you@example.com">Email</a></li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <nav class="dock" aria-label="Dock">
+            <button class="dock-item" data-target="about" aria-label="Open About">About</button>
+            <button class="dock-item" data-target="research" aria-label="Open Research">Research</button>
+            <button class="dock-item" data-target="projects" aria-label="Open Projects">Projects</button>
+            <button class="dock-item" data-target="industry" aria-label="Open Industry">Industry</button>
+            <button class="dock-item" data-target="teaching" aria-label="Open Teaching">Teaching</button>
+            <button class="dock-item" data-target="links" aria-label="Open Links">Links</button>
+          </nav>
+        </div>
+        <div class="bezel"></div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
