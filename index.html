@@ -1,152 +1,163 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ian Raymond Domingo</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="page" aria-label="Personal homepage">
-      <section class="device" aria-label="MacBook display">
-        <div class="screen">
-          <header class="menu-bar" aria-label="Top menu bar">
-            <div class="menu-left">
-              <span class="apple" aria-hidden="true"></span>
-              <span class="menu-title">Ian Domingo</span>
-            </div>
-            <div class="menu-right" aria-live="polite">
-              <span>Wi-Fi</span>
-              <span class="battery">100%</span>
-              <span class="time" id="menu-time">--:--</span>
-            </div>
-          </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ian Raymond Domingo</title>
+  <meta name="description" content="Ian Raymond Domingo — Machine Learning research (biologically inspired optimization, neural balancing, model behavior)." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="wrap">
+      <div class="hero">
+        <div class="hero-left">
+          <h1>Ian Raymond Domingo</h1>
+          <p class="subtitle">M.S. Computer Science (UC Irvine) • Machine Learning • Biologically inspired optimization</p>
+          <p class="blurb">
+            I work on machine learning algorithms for deep neural networks with an emphasis on biologically inspired
+            mechanisms. My main thread is <strong>neural balancing</strong> across architectures (CNNs and transformers),
+            alongside related work on representation learning and model behavior. I’m also interested in LLM safety,
+            including <strong>memorization / rote behavior</strong> analysis.
+          </p>
 
-          <section class="desktop" aria-label="Desktop windows">
-            <div class="windows">
-              <section class="window" id="about" aria-labelledby="about-title">
-                <div class="window-bar">
-                  <div class="window-controls" aria-label="Window controls">
-                    <button class="control red" data-action="close" aria-label="Close About"></button>
-                    <button class="control yellow" data-action="collapse" aria-label="Collapse About"></button>
-                    <button class="control green" data-action="minimize" aria-label="Minimize About"></button>
-                  </div>
-                  <h2 class="window-title" id="about-title">About</h2>
-                </div>
-                <div class="window-content">
-                  <p class="name">Ian Raymond Domingo</p>
-                  <p class="summary">
-                    Biologically inspired ML: neural balancing across CNNs/Transformers, optimization and model
-                    behavior, with growing interest in LLM safety and memorization.
-                  </p>
-                </div>
-              </section>
-
-              <section class="window" id="research" aria-labelledby="research-title">
-                <div class="window-bar">
-                  <div class="window-controls" aria-label="Window controls">
-                    <button class="control red" data-action="close" aria-label="Close Research"></button>
-                    <button class="control yellow" data-action="collapse" aria-label="Collapse Research"></button>
-                    <button class="control green" data-action="minimize" aria-label="Minimize Research"></button>
-                  </div>
-                  <h2 class="window-title" id="research-title">Research</h2>
-                </div>
-                <div class="window-content">
-                  <ul>
-                    <li>Neural Balancing (core project).</li>
-                    <li>PushApart + LWTA for attention heads (brief).</li>
-                    <li>LLM memorization / rote memorization analysis (brief).</li>
-                    <li>Multimodal model behavior and safety (brief).</li>
-                    <li>MRI generative modeling (VAE/DDPM, T1→T2 translation) (brief).</li>
-                  </ul>
-                </div>
-              </section>
-
-              <section class="window" id="industry" aria-labelledby="industry-title">
-                <div class="window-bar">
-                  <div class="window-controls" aria-label="Window controls">
-                    <button class="control red" data-action="close" aria-label="Close Industry"></button>
-                    <button class="control yellow" data-action="collapse" aria-label="Collapse Industry"></button>
-                    <button class="control green" data-action="minimize" aria-label="Minimize Industry"></button>
-                  </div>
-                  <h2 class="window-title" id="industry-title">Industry</h2>
-                </div>
-                <div class="window-content">
-                  <ul>
-                    <li>Amazon: Next-Gen Security Automation / Applied Scientist internship; security data classification + DB improvements with GenAI.</li>
-                    <li>Lawrence Livermore: external sensors for anomaly detection on heavy machinery.</li>
-                    <li>iMetalX: applied ML for industrial workflows (high level).</li>
-                  </ul>
-                </div>
-              </section>
-
-              <section class="window" id="projects" aria-labelledby="projects-title">
-                <div class="window-bar">
-                  <div class="window-controls" aria-label="Window controls">
-                    <button class="control red" data-action="close" aria-label="Close Projects"></button>
-                    <button class="control yellow" data-action="collapse" aria-label="Collapse Projects"></button>
-                    <button class="control green" data-action="minimize" aria-label="Minimize Projects"></button>
-                  </div>
-                  <h2 class="window-title" id="projects-title">Projects</h2>
-                </div>
-                <div class="window-content">
-                  <ul>
-                    <li>Checkless: restaurant inventory/analytics; Supabase + Vercel.</li>
-                    <li>Adaptive Optimizer Sandbox (placeholder).</li>
-                    <li>Model Drift Monitor (placeholder).</li>
-                  </ul>
-                </div>
-              </section>
-
-              <section class="window" id="teaching" aria-labelledby="teaching-title">
-                <div class="window-bar">
-                  <div class="window-controls" aria-label="Window controls">
-                    <button class="control red" data-action="close" aria-label="Close Teaching"></button>
-                    <button class="control yellow" data-action="collapse" aria-label="Collapse Teaching"></button>
-                    <button class="control green" data-action="minimize" aria-label="Minimize Teaching"></button>
-                  </div>
-                  <h2 class="window-title" id="teaching-title">Teaching</h2>
-                </div>
-                <div class="window-content">
-                  <ul>
-                    <li>TA roles: CS178, CS273A, CS143, and related courses.</li>
-                  </ul>
-                </div>
-              </section>
-
-              <section class="window" id="links" aria-labelledby="links-title">
-                <div class="window-bar">
-                  <div class="window-controls" aria-label="Window controls">
-                    <button class="control red" data-action="close" aria-label="Close Links"></button>
-                    <button class="control yellow" data-action="collapse" aria-label="Collapse Links"></button>
-                    <button class="control green" data-action="minimize" aria-label="Minimize Links"></button>
-                  </div>
-                  <h2 class="window-title" id="links-title">Links</h2>
-                </div>
-                <div class="window-content">
-                  <ul class="link-list">
-                    <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
-                    <li><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a></li>
-                    <li><a href="mailto:you@example.com">Email</a></li>
-                  </ul>
-                </div>
-              </section>
-            </div>
-          </section>
-
-          <nav class="dock" aria-label="Dock">
-            <button class="dock-item" data-target="about" aria-label="Open About">About</button>
-            <button class="dock-item" data-target="research" aria-label="Open Research">Research</button>
-            <button class="dock-item" data-target="projects" aria-label="Open Projects">Projects</button>
-            <button class="dock-item" data-target="industry" aria-label="Open Industry">Industry</button>
-            <button class="dock-item" data-target="teaching" aria-label="Open Teaching">Teaching</button>
-            <button class="dock-item" data-target="links" aria-label="Open Links">Links</button>
-          </nav>
+          <div class="quicklinks" aria-label="Quick links">
+            <a class="chip" href="mailto:ian.raymond.domingo@gmail.com">ian.raymond.domingo@gmail.com</a>
+            <a class="chip" href="https://github.com/ianrdomingo" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="chip" href="https://linkedin.com/in/ianrdomingo" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="chip" href="#" target="_blank" rel="noreferrer" title="Replace # with your Scholar URL">Google Scholar</a>
+          </div>
         </div>
-        <div class="bezel"></div>
+
+        <nav class="nav" aria-label="Site navigation">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#industry">Industry</a>
+          <a href="#projects">Projects</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="research">
+      <h2>Research</h2>
+      <p class="section-note">
+        My work is mostly about making training dynamics and representations better behaved, with mechanisms that have a
+        “biological flavor” (local constraints, competition/sparsity, and balanced signal flow).
+      </p>
+      <ul class="bullets">
+        <li><strong>Neural Balancing (core):</strong> balancing input/output weight norms across units (neurons/channels/heads) to stabilize learning and improve performance.</li>
+        <li><strong>Balancing in vision CNNs:</strong> experiments across model families (e.g., VGG-style and residual networks), plus careful multi-seed reproducibility runs.</li>
+        <li><strong>Transformer head diversity + sparsity:</strong> PushApart (encourage diverse attention heads) and LWTA / k-WTA over heads (select top-k heads per input).</li>
+        <li><strong>LLM memorization analysis:</strong> controlled experiments on smaller Llama models, scaling to larger variants when feasible.</li>
+        <li><strong>Multimodal model behavior / safety:</strong> robustness, bias, and vulnerability analysis for models using text + audio/vision signals.</li>
+        <li><strong>Medical imaging (MRI):</strong> generative modeling and translation (VAE, diffusion, and T1→T2), evaluated with metrics like SSIM/PSNR.</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <section class="card" id="publications">
+        <h2>Publications</h2>
+        <p class="section-note">
+          I’ve published on neural balancing and model behavior (including workshops). For the authoritative list, see Google Scholar.
+        </p>
+        <ul class="bullets">
+          <li><strong>Neural Balancing</strong> — AAAI (paper)</li>
+          <li><strong>Neural Balancing (extended/journal)</strong> — IJCAI AIJ (journal)</li>
+          <li><strong>LLM memorization / rote behavior</strong> — L2M2 @ ACL (workshop)</li>
+          <li><strong>Additional workshop publications</strong> — NeurIPS workshops</li>
+        </ul>
+        <p class="small muted">Note: items above are intentionally high-level (venue-only). Replace with full citations if you want.</p>
       </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
+
+      <section class="card" id="industry">
+        <h2>Industry</h2>
+        <ul class="bullets">
+          <li><strong>Amazon</strong> — Applied Scientist internship (Next-Gen Security Automation): built GenAI-driven systems for security-data classification and database quality improvements.</li>
+          <li><strong>Lawrence Livermore National Laboratory</strong> — anomaly detection on manufacturing machinery using external vibration sensors and high-framerate cameras (non-invasive analytics).</li>
+          <li><strong>iMetalX</strong> — applied ML work related to 3D reconstruction / multi-view synthesis (project-based collaboration).</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="card" id="projects">
+      <h2>Projects</h2>
+      <div class="proj">
+        <div class="proj-title">
+          <span>Neural Balancing Experiments (CNNs + benchmarks)</span>
+          <a class="muted-link" href="https://github.com/ianrdomingo" target="_blank" rel="noreferrer">repos</a>
+        </div>
+        <p class="muted">
+          Modular training code to compare baseline vs channel balancing vs neuronal balancing with SGD-only setups and multi-seed reproducibility.
+          Includes CIFAR-style work and scaling experiments (e.g., VGG family).
+        </p>
+      </div>
+
+      <div class="proj">
+        <div class="proj-title">
+          <span>Checkless</span>
+          <a class="muted-link" href="#" title="Replace with your Checkless URL/repo">link</a>
+        </div>
+        <p class="muted">
+          Restaurant inventory + analytics platform (Supabase + Vercel). Focused on clean data capture and useful operational insights.
+        </p>
+      </div>
+
+      <div class="proj">
+        <div class="proj-title">
+          <span>SfM / 3D Reconstruction (OpenCV pipeline)</span>
+          <a class="muted-link" href="#" title="Optional: add repo link">link</a>
+        </div>
+        <p class="muted">
+          A modular structure-from-motion pipeline built from scratch (no COLMAP dependency) as a learning/research tool.
+        </p>
+      </div>
+    </section>
+
+    <section class="card" id="teaching">
+      <h2>Teaching</h2>
+      <p class="section-note">
+        I’ve served as a TA for multiple courses at UC Irvine, often building discussion materials and notebooks and helping with grading and office hours.
+      </p>
+      <ul class="bullets">
+        <li><strong>CS 178</strong> — Machine Learning & Data Mining (TA)</li>
+        <li><strong>CS 273A</strong> — Intro to Machine Learning (TA / course involvement)</li>
+        <li><strong>CS 143</strong> — Data Visualization (TA)</li>
+        <li><strong>Additional ML/CV support</strong> — project guidance, notebook development, and discussion sections</li>
+      </ul>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div>
+          <div class="label">Email</div>
+          <a href="mailto:ian.raymond.domingo@gmail.com">ian.raymond.domingo@gmail.com</a>
+        </div>
+        <div>
+          <div class="label">GitHub</div>
+          <a href="https://github.com/ianrdomingo" target="_blank" rel="noreferrer">github.com/ianrdomingo</a>
+        </div>
+        <div>
+          <div class="label">LinkedIn</div>
+          <a href="https://linkedin.com/in/ianrdomingo" target="_blank" rel="noreferrer">linkedin.com/in/ianrdomingo</a>
+        </div>
+        <div>
+          <div class="label">Scholar</div>
+          <a href="#" target="_blank" rel="noreferrer" title="Replace # with your Scholar URL">Add Scholar link</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span class="muted">Last updated: <span id="last-updated">—</span></span>
+        <a class="backtotop" href="#top">Back to top</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
