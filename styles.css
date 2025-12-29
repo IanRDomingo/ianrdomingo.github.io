@@ -1,0 +1,113 @@
+:root{
+  --bg:#ffffff;
+  --ink:#151515;
+  --muted:#5a5a5a;
+  --accent:#0f5a4a;
+  --card:#ffffff;
+  --border:rgba(21,21,21,0.12);
+  --max: 760px;
+}
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  color:var(--ink);
+  font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height:1.6;
+  background:var(--bg);
+}
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:64px 20px 90px;
+}
+header{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.site-title{
+  font-size:36px;
+  letter-spacing:-0.02em;
+  margin:0;
+}
+.page-title{
+  font-size:28px;
+  letter-spacing:-0.015em;
+  margin:0;
+}
+.tagline{
+  color:var(--muted);
+  font-size:16px;
+  margin:0;
+}
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  font-size:15px;
+}
+nav a{
+  text-decoration:none;
+  color:var(--ink);
+  border-bottom:1px solid transparent;
+  padding-bottom:2px;
+}
+nav a:hover{ border-bottom-color:var(--ink); }
+nav a.is-active{
+  font-weight:600;
+  border-bottom-color:var(--ink);
+}
+main{
+  margin-top:28px;
+  display:grid;
+  gap:18px;
+}
+.section{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:18px;
+}
+.section h2{
+  font-size:20px;
+  margin:0 0 10px;
+}
+.section p{
+  margin:0 0 12px;
+}
+.section p:last-child{
+  margin-bottom:0;
+}
+.link-list{
+  display:grid;
+  gap:8px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.link-list a{
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid rgba(15,90,74,0.35);
+  padding-bottom:1px;
+}
+.link-list a:hover{ border-bottom-color:rgba(15,90,74,0.8); }
+.link-list li{ word-break:break-word; }
+.inline-link{
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid rgba(15,90,74,0.35);
+}
+.inline-link:hover{
+  border-bottom-color:rgba(15,90,74,0.8);
+}
+footer{
+  margin-top:36px;
+  color:var(--muted);
+  font-size:13px;
+}
+@media (max-width: 640px){
+  .container{ padding:48px 18px 70px; }
+  .site-title{ font-size:32px; }
+  .page-title{ font-size:25px; }
+}

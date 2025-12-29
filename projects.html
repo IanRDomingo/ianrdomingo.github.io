@@ -1,0 +1,161 @@
+<!-- =========================
+     projects.html
+     ========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects  -  Ian Raymond Domingo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="page-title">Projects</h1>
+      <p class="tagline">Research prototypes and practical tools.</p>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="industry.html">Industry</a>
+        <a href="academic.html">Academic</a>
+        <a href="publications.html">Publications</a>
+        <a class="is-active" href="projects.html">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Projects</h2>
+
+        <p><strong>Applied Scientist Intern Project: Security Classification Architecture</strong><br />
+          <span class="tagline">Amazon - Next-Gen Security Automation (SDO) - 2025</span>
+        </p>
+        <p>
+          Designed and implemented a machine learning system to restructure and improve large-scale security data classification architectures.
+          Developed intelligent schema restructuring mechanisms to map noisy, heterogeneous security signals into a cleaner and more expressive taxonomy.
+          Trained and evaluated classifiers on the restructured architecture, substantially improving classification performance, coverage, and downstream usability of security data.
+        </p>
+
+        <p><strong>Checkless: Restaurant Analytics and Inventory Platform</strong><br />
+          <span class="tagline">Independent Startup Project - 2024-Present</span>
+        </p>
+        <p>
+          Co-founded and built a cloud-based restaurant analytics and inventory platform.
+          Designed backend systems using Supabase and PostgreSQL, with frontend deployment via Vercel.
+          Implemented data pipelines and analytics components to model restaurant operations and historical usage patterns, and led system architecture and database schema design.
+        </p>
+
+        <p><strong>LLM Memorization and Deterministic Regurgitation</strong><br />
+          <span class="tagline">University of California, Irvine - 2024-2025</span>
+        </p>
+        <p>
+          Investigated memorization behavior in large language models under deterministic decoding regimes.
+          Designed experiments demonstrating that autoregressive self-feeding of model-generated tokens enables verbatim regurgitation of training data, revealing memorization vulnerabilities not captured by standard evaluation methods.
+          This work was accepted at L2M2 @ ACL 2025.
+        </p>
+
+        <p><strong>3D Reconstruction and Multi-View Geometry</strong><br />
+          <span class="tagline">iMetalX - 2024-2025</span>
+        </p>
+        <p>
+          Implemented structure-from-motion and multi-view reconstruction pipelines using OpenCV, OpenMVG, and OpenMVS.
+          Reconstructed object-scale and scene-scale geometry from real-world image collections and evaluated reconstruction quality under noisy data and limited camera coverage in an industrial setting.
+        </p>
+
+        <p><strong>Neurodegeneration Modeling Project</strong><br />
+          <span class="tagline">University of California, Irvine - 2024</span>
+        </p>
+        <p>
+          Developed machine learning models related to neurodegenerative disease analysis, focusing on representation learning and predictive modeling using biomedical data.
+          Explored model behavior, feature sensitivity, and evaluation considerations relevant to neurodegeneration research.
+          This work was submitted to Nature in 2024.
+        </p>
+
+        <p><strong>Generative Modeling for Medical Imaging</strong><br />
+          <span class="tagline">University of California, Irvine - 2024</span>
+        </p>
+        <p>
+          Worked on generative modeling approaches for medical imaging, including variational autoencoders and diffusion-based models.
+          Explored representation learning and reconstruction behavior for medical image slices in a course and research setting, using quantitative metrics to evaluate reconstruction quality and distributional similarity.
+        </p>
+
+        <p><strong>Medical Report Generation from Gene and Mutation Data</strong><br />
+          <span class="tagline">University of California, Irvine - 2024</span>
+        </p>
+        <p>
+          Built models that take structured gene and mutation lists as input and generate natural-language diagnostic summaries.
+          Designed preprocessing pipelines to extract biologically relevant features from reports and structured files, and trained supervised models to produce clinically meaningful text outputs.
+        </p>
+
+        <p><strong>Multimodal Learning: Text, Speech, and Vision</strong><br />
+          <span class="tagline">University of California, Irvine and Purdue University (Collaboration) - 2024</span>
+        </p>
+        <p>
+          Developed multimodal learning models integrating text, speech, and vision inputs for supervised learning tasks.
+          Implemented cross-attention mechanisms and multimodal fusion strategies to align heterogeneous representations while preserving shared semantic labels.
+          Conducted empirical evaluations addressing modality imbalance, representation alignment, and robustness across modalities.
+        </p>
+
+        <p><strong>Neural Balancing for Deep Neural Networks</strong><br />
+          <span class="tagline">University of California, Irvine - Intelligent Systems Group - 2023-Present</span>
+        </p>
+        <p>
+          Developed biologically inspired neural balancing algorithms that balance input and output weight norms to improve training stability and optimization behavior in deep neural networks.
+          Studied balancing in fully connected architectures and extended the framework across multiple model families.
+          Designed controlled experimental pipelines with reproducible training protocols and extensive ablation studies.
+          This work was accepted at NeurIPS 2024 workshops (OPT, SciForDL, and MLNCP), AAAI 2025, and the AI Journal (IJCAI Journal Track, 2025).
+          This line of work forms the core of my master's thesis.
+        </p>
+
+        <p><strong>Convolutional Neural Balancing</strong><br />
+          <span class="tagline">University of California, Irvine - Intelligent Systems Group - 2023-Present</span>
+        </p>
+        <p>
+          Extended neural balancing methods to convolutional neural networks, where neuron-level input and output structure is not explicit.
+          Implemented position-wise neuronal balancing of convolutional kernels and compared it against channel balancing and baseline training.
+          Conducted systematic experiments on CIFAR-10 and TinyImageNet using VGG-style architectures, analyzing convergence behavior, optimization stability, and weight norm dynamics.
+          Portions of this work appear in the same venues as the broader neural balancing project.
+        </p>
+
+        <p><strong>Sepsis Mortality Prediction</strong><br />
+          <span class="tagline">University of California, Irvine and University of Southern California (Collaboration) - 2023-2024</span>
+        </p>
+        <p>
+          Developed supervised machine learning models to predict patient mortality in sepsis using structured clinical data.
+          Focused on temporal feature extraction from electronic medical records, handling severe class imbalance, and evaluating models using clinically relevant performance metrics.
+          Emphasized robustness and interpretability for clinical decision support.
+          This work was accepted at BMC in 2024.
+        </p>
+
+        <p><strong>Tourbillon: Biologically Plausible Neural Architecture</strong><br />
+          <span class="tagline">University of California, Irvine - 2023-2024</span>
+        </p>
+        <p>
+          Worked on the Tourbillon architecture, a biologically inspired neural network model emphasizing local learning dynamics, structured connectivity, and stability properties aligned with biological constraints.
+          Contributed to model implementation, experimentation, and empirical analysis of learning behavior relative to standard deep learning architectures.
+          This work was accepted at UniReps (NeurIPS 2024) and submitted to NLDL 2025.
+        </p>
+
+        <p><strong>Database-Driven Recommendation Systems</strong><br />
+          <span class="tagline">University of California, Irvine - 2023-2024</span>
+        </p>
+        <p>
+          Developed recommender system prototypes using relational databases to model user preferences, historical behavior, and contextual signals.
+          Applied these systems to domains such as restaurant recommendations and operational decision support, emphasizing schema design and SQL-driven feature extraction.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Ian Raymond Domingo
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

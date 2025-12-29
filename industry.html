@@ -1,0 +1,73 @@
+<!-- =========================
+     industry.html
+     ========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Industry Experience  -  Ian Raymond Domingo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="page-title">Industry Experience</h1>
+      <p class="tagline">Applied machine learning, product engineering, and research translation.</p>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a class="is-active" href="industry.html">Industry</a>
+        <a href="academic.html">Academic</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Industry Experience</h2>
+
+        <p><strong>Applied Scientist Intern, Amazon</strong><br />
+          <span class="tagline">Next-Gen Security Automation (SDO), 2025</span>
+        </p>
+        <p>
+          Worked on large-scale security data classification and database quality improvement using generative AI and machine learning models.
+          Built end-to-end pipelines for analyzing noisy, heterogeneous security signals and mapping them into structured schemas for downstream automation.
+          Designed evaluation workflows to measure accuracy, coverage, and failure modes.
+          Collaborated closely with applied scientists and engineers in a production security environment.
+          Internship resulted in a recommendation for the full-time L4 Applied Scientist pipeline.
+        </p>
+
+        <p><strong>Machine Learning Engineer Intern, iMetalX</strong><br />
+          <span class="tagline">2024</span>
+        </p>
+        <p>
+          Developed machine learning systems for 3D reconstruction and multi-view geometry in manufacturing and metal trading contexts.
+          Worked on data preprocessing, model prototyping, and evaluation of reconstruction quality under real-world constraints, including noisy inputs and limited annotations.
+        </p>
+
+        <p><strong>Co-Founder / Technical Lead, Checkless</strong><br />
+          <span class="tagline">2024-Present</span>
+        </p>
+        <p>
+          Built a cloud-based restaurant analytics and inventory platform.
+          Designed backend infrastructure using Supabase and PostgreSQL, with frontend deployment via Vercel.
+          Implemented data pipelines and machine learning components to analyze restaurant operations and usage patterns.
+          Led system design, database schema development, and deployment workflows, focusing on reliability and maintainability.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Ian Raymond Domingo
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

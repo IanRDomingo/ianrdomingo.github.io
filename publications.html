@@ -1,0 +1,98 @@
+<!-- =========================
+     publications.html
+     ========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications  -  Ian Raymond Domingo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="page-title">Publications</h1>
+      <p class="tagline">Papers, preprints, and scholarly writing.</p>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="industry.html">Industry</a>
+        <a href="academic.html">Academic</a>
+        <a class="is-active" href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Publications</h2>
+
+        <p class="tagline">
+          Full list on
+          <a class="inline-link" href="https://scholar.google.com/citations?user=eajQj3wAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          and
+          <a class="inline-link" href="https://openreview.net/search?term=~Ian_Domingo2&content=authors&group=all&source=forum&sort=cdate:desc" target="_blank" rel="noopener">OpenReview</a>.
+        </p>
+
+        <p><strong>Neural Balancing for Deep Neural Networks</strong><br />
+          <span class="tagline">Ian Raymond Domingo, Pierre Baldi</span>
+        </p>
+        <p>
+          Accepted at AAAI 2025.
+          Accepted at AIJ (IJCAI Journal Track) 2025.
+          Accepted at NeurIPS 2024 Workshops: OPT, SciForDL, MLNCP.
+          This work introduces biologically inspired neural balancing algorithms that balance input and output weight norms to improve optimization stability in deep neural networks.
+          The paper presents theoretical motivation and extensive empirical validation across multiple architectures, including convolutional networks.
+        </p>
+
+        <p><strong>Tourbillon: A Biologically Plausible Neural Architecture</strong><br />
+          <span class="tagline">Ian Raymond Domingo, collaborators</span>
+        </p>
+        <p>
+          Accepted at UniReps (NeurIPS 2024).
+          Submitted to NLDL 2025.
+          This work proposes the Tourbillon architecture, a biologically motivated neural network emphasizing structured connectivity and local learning dynamics.
+          The paper analyzes learning behavior and stability properties relative to standard deep learning models.
+        </p>
+
+        <p><strong>Sepsis Mortality Prediction Using Machine Learning</strong><br />
+          <span class="tagline">Ian Raymond Domingo, collaborators</span>
+        </p>
+        <p>
+          Accepted at BMC, 2024.
+          This paper presents supervised machine learning models for predicting patient mortality in sepsis using structured clinical data.
+          The work focuses on temporal feature extraction, handling class imbalance, and clinically relevant evaluation metrics.
+        </p>
+
+        <p><strong>Neurodegeneration Modeling with Machine Learning</strong><br />
+          <span class="tagline">Ian Raymond Domingo, collaborators</span>
+        </p>
+        <p>
+          Submitted to Nature, 2024.
+          This work explores machine learning approaches for modeling neurodegenerative disease using biomedical data, with an emphasis on representation learning, predictive performance, and interpretability.
+        </p>
+
+        <p><strong>Memorization and Deterministic Regurgitation in Large Language Models</strong><br />
+          <span class="tagline">Ian Raymond Domingo, collaborators</span>
+        </p>
+        <p>
+          Accepted at L2M2 @ ACL 2025.
+          This paper studies memorization behavior in large language models under deterministic decoding.
+          It demonstrates that autoregressive self-feeding of generated tokens enables verbatim regurgitation of training data, exposing memorization vulnerabilities not captured by standard evaluation methods.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Ian Raymond Domingo
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

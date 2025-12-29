@@ -1,0 +1,97 @@
+<!-- =========================
+     academic.html
+     ========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academic Experience  -  Ian Raymond Domingo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="page-title">Academic Experience</h1>
+      <p class="tagline">Research in computational neuroscience and deep learning.</p>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="industry.html">Industry</a>
+        <a class="is-active" href="academic.html">Academic</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>Academic Experience</h2>
+
+        <p><strong>Master of Science in Computer Science (Intelligent Systems)</strong><br />
+          <span class="tagline">University of California, Irvine - 2023-Present</span>
+        </p>
+        <p>
+          Graduate student specializing in machine learning and artificial intelligence.
+          Research focus on machine learning algorithms for deep neural networks, with an emphasis on biologically inspired mechanisms.
+          Conducting thesis research on neural balancing methods across model architectures, including fully connected networks, convolutional networks, and transformers.
+          Thesis defense scheduled for January 2026.
+        </p>
+
+        <p><strong>Graduate Researcher, Intelligent Systems Group</strong><br />
+          <span class="tagline">University of California, Irvine - Advisor: Pierre Baldi - 2023-Present</span>
+        </p>
+        <p>
+          Research on neural balancing algorithms for deep neural networks.
+          Developed and evaluated balancing methods for convolutional networks, including position-wise neuronal balancing of kernels, and extended related ideas to transformer architectures.
+          Conducted extensive empirical studies on CIFAR-10 and related benchmarks, alongside analysis of optimization behavior and training dynamics.
+          Research accepted at AAAI 2025 and in AIJ (IJCAI Journal Track).
+        </p>
+
+        <p><strong>Research Collaboration, Purdue University</strong><br />
+          <span class="tagline">2023-2024</span>
+        </p>
+        <p>
+          Collaborated with researchers at Purdue University on machine learning projects related to representation learning and model behavior.
+          Contributed to experimental design, model implementation, and empirical analysis across neural network architectures.
+        </p>
+
+        <p><strong>Research Collaboration, University of Southern California</strong><br />
+          <span class="tagline">2023-2024</span>
+        </p>
+        <p>
+          Collaborated with researchers at the University of Southern California on machine learning and multimodal learning projects.
+          Assisted with data processing, model experimentation, and evaluation of multimodal learning systems.
+        </p>
+
+        <p><strong>Teaching Assistant, University of California, Irvine</strong><br />
+          <span class="tagline">2023-Present</span>
+        </p>
+        <p>
+          Served as a teaching assistant for multiple undergraduate and graduate courses, including Machine Learning and Data Mining, Introduction to Machine Learning, Data Visualization, Project in Computer Vision, and Image Understanding.
+          Led discussion sections, held office hours, graded assignments and exams, and assisted with curriculum development and instructional materials.
+        </p>
+
+        <p><strong>Bachelor of Science in Computer Science (Specialization in Intelligent Systems)</strong><br />
+          <span class="tagline">University of California, Irvine - 2019-2023</span>
+        </p>
+        <p>
+          Completed undergraduate studies with a specialization in Intelligent Systems.
+          Coursework emphasized machine learning, artificial intelligence, probability, optimization, and computer vision.
+          Undergraduate projects and early research experiences formed the foundation for subsequent graduate research in machine learning algorithms and model behavior.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Ian Raymond Domingo
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
