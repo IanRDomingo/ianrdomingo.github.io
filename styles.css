@@ -23,7 +23,24 @@ body{
 header{
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap:18px;
+}
+.header-main{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+.header-text{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.profile-image{
+  width:140px;
+  height:140px;
+  border-radius:14px;
+  object-fit:cover;
+  border:1px solid var(--border);
 }
 .site-title{
   font-size:36px;
@@ -110,4 +127,5 @@ footer{
   .container{ padding:48px 18px 70px; }
   .site-title{ font-size:32px; }
   .page-title{ font-size:25px; }
+  .header-main{ flex-direction:column; }
 }
